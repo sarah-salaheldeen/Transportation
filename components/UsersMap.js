@@ -106,14 +106,15 @@ componentDidMount(){
           {this.state.userLocationMarker}
         </MapView>
         <Callout>
-            <View style={styles.calloutView}>
         <SearchBar
-        style={styles.calloutSearch}
+        containerStyle= {styles.containerStyle}
+        inputContainerStyle= {styles.inputContainerStyle}
+        round
+        lightTheme
         placeholder="Type Here..."
         onChangeText={this.updateSearch}
         value={this.state.search}
     />
-    </View>
         </Callout>
         </View>
          )
@@ -130,21 +131,23 @@ componentDidMount(){
                 marginTop: 20
             },
 
-            calloutView: {
-                flexDirection: "row",
+            containerStyle: {
+                flexDirection: 'row',
                 backgroundColor: "rgba(255, 255, 255, 0.9)",
-                borderRadius: 10,
-                width: "40%",
-                marginLeft: "30%",
-                marginRight: "30%",
-                marginTop: 20
+                //borderRadius: 10,
+                //width: "40%",
+                marginLeft: 10,
+                marginRight: 10,
+                marginTop: 30
               },
-              calloutSearch: {
-                borderColor: "transparent",
-                marginLeft: "10%",
-                width: "90%",
-                marginRight: "10%",
-                height: 40,
-                borderWidth: 0.0  
+              inputContainerStyle: {
+                  flex: 1,
+                  backgroundColor: "rgba(255, 255, 255, 0.9)",
+                //borderColor: "transparent",
+                //marginLeft: "10%",
+                //width: "90%",
+                //marginRight: "10%",
+                //height: 40,
+                //borderWidth: 0.0  
               }
     })
