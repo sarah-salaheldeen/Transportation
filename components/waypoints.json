@@ -1,0 +1,12 @@
+{
+    "wps": [
+ {"latitude": 15.539590, "longitude": 32.582848}, 
+   {"latitude":15.54405  , "longitude": 32.582087},
+  {"latitude":15.550110 , "longitude": 32.581058},
+  {"latitude":15.563805 , "longitude": 32.578744},
+ {"latitude":15.572456 , "longitude": 32.577280},
+  {"latitude":15.598824 , "longitude": 32.570570},
+  {"latitude":15.600229 , "longitude": 32.563848},
+  {"latitude":15.601245 , "longitude": 32.559044}
+    ]
+ }
