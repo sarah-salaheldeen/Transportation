@@ -3,6 +3,7 @@ import { View, StyleSheet } from 'react-native'
 import MapView, {Marker, AnimatedRegion, Animated, mapRegion, onRegionChange, Callout} from 'react-native-maps'
 import MapViewDirections from 'react-native-maps-directions'
 import {SearchBar} from 'react-native-elements'
+import { GooglePlacesAutocomplete } from 'react-native-google-places-autocomplete'
 
 const GOOGLE_MAPS_APIKEY = 'AIzaSyCHyVNEOn3jDR8KSJe_p6ZGDwt5lpeEYeE'
 
@@ -102,8 +103,8 @@ componentDidMount(){
         }}
         region={this.state.mapRegion}
         style={styles.map}
+        showsUserLocation={true}
          >
-          {this.state.userLocationMarker}
         </MapView>
         <Callout>
         <SearchBar
